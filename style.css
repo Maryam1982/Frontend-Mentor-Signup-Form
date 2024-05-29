@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #181818;
+  background-color: hsl(234, 29%, 20%);
+  padding: 4rem;
+  overflow-x: hidden;
+}
+
+.main-container {
+  width: 65%;
+  background-color: #fff;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.img-container {
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/images/illustration-sign-up-desktop.svg");
+  flex: 1 20%;
+}
+
+form {
+  padding: 4.5rem;
+  flex: 2;
+}
+
+p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.title {
+  font-size: 5.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  font-size: 1.6rem;
+}
+
+.item-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.item-container .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.email-container {
+  margin-top: 2.5rem;
+}
+
+.email-container label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.email-container input {
+  height: 4rem;
+  border: 1px solid hsl(231, 7%, 60%);
+  border-radius: 0.5rem;
+  width: 100%;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+}
+
+.email-container input:focus {
+  outline: none;
+  border: 1px solid hsl(235, 18%, 26%);
+}
+
+button {
+  height: 4.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #fb586c, #fc9454);
+  cursor: pointer;
+  box-shadow: 0 10px 30px -10px #ec5c64;
+}
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background-color: #fff;
+  width: 35%;
+  padding: 5rem 4.5rem;
+  border-radius: 2.5rem;
+}
+
+.message-box .title {
+  line-height: 1;
+}
+
+.message-box img {
+  width: 4.5rem;
+  height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.message-box button {
+  margin-top: 1.5rem;
+}
+
+.errorMessage {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+.label-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1270px) {
+  form {
+    padding: 1.5rem;
+  }
+
+  .main-container {
+    width: 85%;
+  }
+
+  .message-box .title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 918px) {
+  html {
+    font-size: 55%;
+  }
+  .main-container {
+    width: 100%;
+  }
+
+  .message-box {
+    width: 45%;
+    padding: 3rem 3rem;
+  }
+}
+
+@media screen and (max-width: 646px) {
+  body {
+    padding: 0;
+  }
+  .img-container {
+    flex-basis: 10%;
+  }
+
+  .message-box {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .img-container {
+    min-height: 30rem;
+    order: -1;
+    background-image: url("./assets/images/illustration-sign-up-mobile.svg");
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .title {
+    font-size: 5rem;
+  }
+
+  .message-box {
+    width: 100%;
+  }
+}

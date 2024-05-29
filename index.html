@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700"
+      rel="stylesheet"
+    />
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./index.js" defer></script>
+    <title>Newsletter Signup Form</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container">
+        <form>
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <div class="item-container">
+              <img src="./assets/images/icon-list.svg" class="icon" />
+              <li>Product discovery and building what matters</li>
+            </div>
+            <div class="item-container">
+              <img src="./assets/images/icon-list.svg" class="icon" />
+              <li>Measuring to ensure updates are a success</li>
+            </div>
+            <div class="item-container">
+              <img src="./assets/images/icon-list.svg" class="icon" />
+              <li>And much more!</li>
+            </div>
+          </ul>
+          <div class="email-container">
+            <div class="label-container">
+              <label>Email address</label> <label class="errorMessage"></label>
+            </div>
+
+            <input type="text" placeholder="email@company.com" />
+          </div>
+          <button>Subscribe to monthly newsletter</button>
+        </form>
+        <div class="img-container"></div>
+      </div>
+    </div>
+    <div class="message-box hide">
+      <img src="./assets/images/icon-success.svg" />
+      <h1 class="title">Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.
+      </p>
+      <button>Dismiss message</button>
+    </div>
+  </body>
+</html>
